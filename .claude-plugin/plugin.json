@@ -1,0 +1,18 @@
+{
+  "name": "barakah-cli",
+  "description": "The Islamic Productivity Plugin for Claude Code. A spiritual pair programmer offering mindfulness checks, patience reminders, and gratitude prompts based on The Barakah Effect principles (Intention, Focus, Gratitude). Designed for Muslim developers, especially during Ramadan.",
+  "version": "1.0.0",
+  "author": {
+    "name": "BarakahCLI Contributors"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/kolesar/barakah-cli",
+  "keywords": [
+    "islamic",
+    "productivity",
+    "ramadan",
+    "mindfulness",
+    "barakah",
+    "developer-wellness"
+  ]
+}

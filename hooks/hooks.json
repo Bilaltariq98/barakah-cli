@@ -1,0 +1,59 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/niyyah.js\""
+          }
+        ],
+        "description": "BarakahCLI: Niyyah (Intention) Protocol — greets the user and resets session state"
+      }
+    ],
+
+    "UserPromptSubmit": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/sabr-guard.js\""
+          },
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/barakah-timer.js\""
+          }
+        ],
+        "description": "BarakahCLI: Sabr Guard (frustration detection) + Barakah Timer (periodic mindfulness)"
+      }
+    ],
+
+    "PostToolUse": [
+      {
+        "matcher": "Bash|Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/shukr-hook.js\""
+          }
+        ],
+        "description": "BarakahCLI: Shukr (Gratitude) Hook — context for Claude on success"
+      }
+    ],
+
+    "Stop": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/shukr-stop.js\""
+          }
+        ],
+        "description": "BarakahCLI: Shukr reminder — periodic gratitude after Claude responds"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "meta": {
+    "description": "BarakahCLI user configuration. Edit these values to customize your experience.",
+    "location": "Copy this file to ~/.barakah-cli/config.json to override defaults."
+  },
+
+  "enabled": true,
+  "humor": true,
+  "ramadan_mode": false,
+  "strict_mode": false,
+
+  "niyyah_prompt": true,
+  "sabr_guard": true,
+  "shukr_hook": true,
+  "barakah_timer": true,
+
+  "timer_interval": 10,
+
+  "quiet_hours": {
+    "enabled": false,
+    "start": "23:00",
+    "end": "05:00"
+  }
+}

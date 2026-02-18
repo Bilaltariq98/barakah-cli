@@ -1,0 +1,77 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "description": "BarakahCLI content library. All strings are stored here for easy editing and localization.",
+    "note": "Each array is randomly sampled at runtime. Add or remove entries freely."
+  },
+
+  "niyyah": {
+    "greeting": "Bismillah! As-salamu alaykum. Before we write code, let's correct our Niyyah (Intention). What are we building for today?",
+    "acknowledgments": [
+      "Bismillah. May Allah put Barakah in your keystrokes.",
+      "Bismillah. A worthy intention. Let's begin with purpose.",
+      "Bismillah. May this session be a source of beneficial knowledge.",
+      "Bismillah. With the right Niyyah, even refactoring becomes ibadah."
+    ],
+    "default_skip": "Proceeding with the intention of beneficial knowledge. Bismillah."
+  },
+
+  "sabr": {
+    "snippets": [
+      "Verily, with every StackOverflowError, there is ease. (Quran 94:6, developer edition)",
+      "This bug is a test of your Sabr. Do not let the Shaitan of Syntax distract you.",
+      "404: Khushoo (Focus) not found. Take a breath, make Istighfar, and try again.",
+      "Allah loves those who are patient — and those who write unit tests.",
+      "Remember, anger eats away good deeds like fire eats wood. Take a breath. Let's look at the error log together.",
+      "Even Musa (AS) had to debug the staff trick. Patience, developer.",
+      "The Prophet ﷺ said: 'No fatigue, nor disease, nor anxiety...' — and yes, that includes NullPointerExceptions.",
+      "Before you mass-delete code in frustration, remember: Istighfar first, git reset second.",
+      "Every senior developer was once mass-printing 'WHY DOESN'T THIS WORK'. You're on the right path.",
+      "A moment of Sabr in a moment of anger saves you a hundred moments of regret — and a force push to main.",
+      "This too shall compile. Have patience.",
+      "The compiler is not your enemy. The real jihad is against spaghetti code."
+    ]
+  },
+
+  "shukr": {
+    "snippets": [
+      "Alhamdulillah. It works! (Don't forget to commit.)",
+      "Success is from Allah; the bugs are from our own hands.",
+      "Masha'Allah. A clean build is a blessing.",
+      "Alhamdulillah. All tests passing — a true ni'mah (blessing).",
+      "Subhan'Allah. From red to green. Remember to thank the One who guided your logic.",
+      "Masha'Allah, tabarakAllah! Ship it before qadr changes. (Just kidding. Write tests first.)",
+      "This moment of success is a gift. Alhamdulillah 'ala kulli haal.",
+      "Alhamdulillah. The code compiles, the tests pass, and your Niyyah is intact.",
+      "Every resolved bug is a small victory. Alhamdulillah for debugging skills."
+    ]
+  },
+
+  "barakah_timer": {
+    "reminders": [
+      "You've been coding for a while. Is it time for a stretch or a Dhikr break?",
+      "Code requires logic; the soul requires remembrance. SubhanAllah.",
+      "Pause check: Have you had water? (If you're not fasting!) Have you prayed?",
+      "Your body is an Amanah (trust). Step away from the screen for a moment.",
+      "The Prophet ﷺ encouraged moderation in all things — including coding sprints.",
+      "A 2-minute Dhikr break now could save you an hour of brain fog later.",
+      "Quick reset: Close your eyes. Say SubhanAllah 33 times. Then come back sharper, insha'Allah.",
+      "Time check: Is Salah approaching? The best code can wait for the best obligation."
+    ],
+    "ramadan_reminders": [
+      "Ramadan mode: Your energy is precious. Prioritize, don't overcommit.",
+      "Fasting tip: This is the hour to tackle the hardest problem — your mind is sharp from discipline.",
+      "Ramadan reminder: If you're feeling the fast, that's your body making du'a. Take it easy.",
+      "The Barakah of Ramadan extends to your code. Trust the process, even if velocity drops.",
+      "Suhoor energy check: If you skipped Suhoor, be gentle with yourself today."
+    ]
+  },
+
+  "session_end": {
+    "snippets": [
+      "JazakAllahu Khairan for this session. May your code be a Sadaqah Jariyah.",
+      "Session complete. Remember: the best deeds are those done consistently, even if small. Same goes for commits.",
+      "Alhamdulillah for the work done today. What wasn't finished is tomorrow's Barakah, insha'Allah."
+    ]
+  }
+}
