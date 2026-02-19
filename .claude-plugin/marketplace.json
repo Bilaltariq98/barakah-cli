@@ -1,0 +1,16 @@
+{
+  "name": "kolesar-barakah-cli",
+  "owner": {
+    "name": "BarakahCLI Contributors"
+  },
+  "metadata": {
+    "description": "Islamic mindfulness plugins for Claude Code"
+  },
+  "plugins": [
+    {
+      "name": "barakah-cli",
+      "source": "./",
+      "description": "The Islamic Productivity Plugin for Claude Code"
+    }
+  ]
+}
