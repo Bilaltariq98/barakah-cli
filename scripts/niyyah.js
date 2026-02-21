@@ -47,6 +47,7 @@ async function main() {
   const state = loadState();
   state.interaction_count = 0;
   state.last_timer_at = 0;
+  state.last_quran_at = 0;
   state.session_start_time = new Date().toISOString();
   state.niyyah = null;
   saveState(state);

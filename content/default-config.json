@@ -13,8 +13,12 @@
   "sabr_guard": true,
   "shukr_hook": true,
   "barakah_timer": true,
+  "quran_verse": true,
+  "quran_verse_mode": "random",
 
   "timer_interval": 10,
+  "quran_verse_interval": 15,
+  "quran_verses": [],
 
   "quiet_hours": {
     "enabled": false,

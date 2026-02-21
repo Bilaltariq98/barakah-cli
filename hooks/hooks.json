@@ -24,9 +24,13 @@
           {
             "type": "command",
             "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/barakah-timer.js\""
+          },
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/quran-verse.js\""
           }
         ],
-        "description": "BarakahCLI: Sabr Guard (frustration detection) + Barakah Timer (periodic mindfulness)"
+        "description": "BarakahCLI: Sabr Guard (frustration detection) + Barakah Timer (periodic mindfulness) + Quran Verse Break"
       }
     ],
 

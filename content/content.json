@@ -67,6 +67,21 @@
     ]
   },
 
+  "quran_verses": [
+    { "surah": 94,  "ayah": 5,   "name": "Al-Inshirah 94:5",    "note": "Verily, with hardship comes ease." },
+    { "surah": 2,   "ayah": 286, "name": "Al-Baqarah 2:286",    "note": "Allah does not burden a soul beyond what it can bear." },
+    { "surah": 2,   "ayah": 255, "name": "Ayat al-Kursi",        "note": "Allah — there is no deity except Him, the Ever-Living, the Sustainer." },
+    { "surah": 14,  "ayah": 7,   "name": "Ibrahim 14:7",         "note": "If you are grateful, I will surely increase you." },
+    { "surah": 13,  "ayah": 11,  "name": "Ar-Ra'd 13:11",        "note": "Allah will not change the condition of a people until they change themselves." },
+    { "surah": 65,  "ayah": 3,   "name": "At-Talaq 65:3",        "note": "Whoever relies upon Allah, He is sufficient for him." },
+    { "surah": 39,  "ayah": 53,  "name": "Az-Zumar 39:53",       "note": "Do not despair of the mercy of Allah." },
+    { "surah": 3,   "ayah": 200, "name": "Ali 'Imran 3:200",     "note": "Be patient and persevere." },
+    { "surah": 2,   "ayah": 153, "name": "Al-Baqarah 2:153",     "note": "Seek help through patience and prayer." },
+    { "surah": 16,  "ayah": 97,  "name": "An-Nahl 16:97",        "note": "Whoever does righteous deeds — We will give them a good life." },
+    { "surah": 93,  "ayah": 5,   "name": "Ad-Duha 93:5",         "note": "Your Lord will give to you, and you will be satisfied." },
+    { "surah": 55,  "ayah": 13,  "name": "Ar-Rahman 55:13",      "note": "So which of the favors of your Lord would you deny?" }
+  ],
+
   "session_end": {
     "snippets": [
       "JazakAllahu Khairan for this session. May your code be a Sadaqah Jariyah.",

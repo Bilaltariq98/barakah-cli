@@ -20,6 +20,13 @@ When builds succeed, tests pass, or bugs are fixed, BarakahCLI celebrates with y
 ### Barakah Timer
 Every N interactions (default: 10), BarakahCLI checks in. Are you hydrated? Is Salah approaching? Time for a Dhikr break? Your body is an Amanah.
 
+### Quran Verse Break
+Every N interactions, BarakahCLI opens a Quran verse on quran.com in your browser as a mindful break.
+
+**Random mode** (default): picks from a curated set of self-contained verses (or your own custom list).
+
+**Sequential mode**: reads through the Quran page-by-page (1–604), tracking progress across sessions. When you reach the end, it loops back with a completion message.
+
 ### Ramadan Mode
 Activate Ramadan-specific reminders that are mindful of fasting energy levels, encourage smaller task batches, and include Suhoor/Iftar awareness.
 
@@ -76,6 +83,10 @@ Edit `~/.barakah-cli/config.json` to customize your experience:
   "sabr_guard": true,
   "shukr_hook": true,
   "barakah_timer": true,
+  "quran_verse": true,
+  "quran_verse_mode": "random",
+  "quran_verse_interval": 15,
+  "quran_verses": [],
   "timer_interval": 10,
   "quiet_hours": {
     "enabled": false,
@@ -95,6 +106,10 @@ Edit `~/.barakah-cli/config.json` to customize your experience:
 | `sabr_guard` | `true` | Detect frustration and show patience reminders |
 | `shukr_hook` | `true` | Celebrate successful operations |
 | `barakah_timer` | `true` | Periodic mindfulness reminders |
+| `quran_verse` | `true` | Toggle Quran verse breaks |
+| `quran_verse_mode` | `"random"` | `"random"` for curated verses, `"sequential"` for page-by-page reading |
+| `quran_verse_interval` | `15` | Interactions between verse breaks |
+| `quran_verses` | `[]` | Custom verse list `[{surah, ayah, name}]`; empty uses built-in defaults |
 | `timer_interval` | `10` | Interactions between timer reminders |
 | `quiet_hours` | off | Suppress all reminders during specified hours |
 
@@ -114,6 +129,7 @@ barakah-cli/
 │   ├── sabr-guard.js          # UserPromptSubmit: frustration detection
 │   ├── shukr-hook.js          # PostToolUse: success gratitude
 │   ├── barakah-timer.js       # UserPromptSubmit: periodic reminders
+│   ├── quran-verse.js         # UserPromptSubmit: Quran verse breaks
 │   └── setup.js               # First-run initialization
 ├── commands/
 │   ├── barakah.md             # /barakah-cli:barakah command
@@ -156,6 +172,7 @@ All messages are in `content/content.json`. You can:
 - **Add your own Sabr snippets** to the `sabr.snippets` array
 - **Add Shukr messages** to `shukr.snippets`
 - **Add Ramadan reminders** to `barakah_timer.ramadan_reminders`
+- **Add custom Quran verses** to `quran_verses` in `config.json` using `{ "surah": N, "ayah": N, "name": "..." }` objects, or add to `content.json`'s `quran_verses` array to extend the default pool
 - **Translate** — copy `content.json` to `content-ar.json` or any locale (locale support planned for v2)
 
 ---
